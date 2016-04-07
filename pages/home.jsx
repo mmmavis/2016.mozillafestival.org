@@ -27,11 +27,12 @@ var Home = React.createClass({
         <Header logoImage="/assets/images/logo-mozilla-festival-white.svg"/>
         <HeroUnit className="home-hero-unit" image="/assets/images/home.jpg"
                   image2x="/assets/images/home.jpg">
+          <div className="video-wrapper">
           {function() {
             if (self.state.playVideo) {
               return (
                 <div className="iframe-container">
-                  <iframe src="https://player.vimeo.com/video/154774646?color=ffffff&title=0&byline=0&portrait=0" frameborder="0" allowfullscreen></iframe>
+                  <iframe src="https://player.vimeo.com/video/154774646?color=ffffff&title=0&byline=0&portrait=0" frameBorder="0" allowFullScreen></iframe>
                 </div>
               );
             } else {
@@ -45,6 +46,7 @@ var Home = React.createClass({
               );
             }
           }()}
+          </div>
           <h1>mozilla festival</h1>
           <h2>October 28-30, 2016<br/>Ravensbourne, London</h2>
           <div className="horizontal-rule"></div>
