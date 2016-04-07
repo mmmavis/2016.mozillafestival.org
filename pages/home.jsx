@@ -31,7 +31,7 @@ var Home = React.createClass({
             if (self.state.playVideo) {
               return (
                 <div className="iframe-container">
-                  <iframe src="https://www.youtube.com/embed/dYoiHhsdHCk?autoplay=1" frameborder="0" allowfullscreen></iframe>
+                  <iframe src="https://player.vimeo.com/video/154774646?color=ffffff&title=0&byline=0&portrait=0" frameborder="0" allowfullscreen></iframe>
                 </div>
               );
             } else {
@@ -46,15 +46,15 @@ var Home = React.createClass({
             }
           }()}
           <h1>mozilla festival</h1>
-          <h2>2016 dates coming soon</h2>
+          <h2>October 28-30, 2016<br/>Ravensbourne, London</h2>
           <div className="horizontal-rule"></div>
           <div>Three days of building a truly global web together.</div>
           <div>Come with an idea, leave with a community.</div>
         </HeroUnit>
         <div className="centered content wide">
           <h1>Help Make the Web a Better Place</h1>
-          <p>Share your ideas for improving the open Internet</p>
-          <Link to="tickets" className="button"><span>Buy a Ticket</span></Link>
+          <p>Receive festival news and updates by email</p>
+          <a href="https://ti.to/Mozilla/mozfest-2016" className="button"><span>Sign up</span></a>
         </div>
         <Footer/>
       </div>
